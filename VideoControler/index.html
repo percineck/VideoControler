@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+    <title>Animais Fantásticos</title>
+    <link rel="icon" type="image/png" href="./imgs/tumbfilme.png">
+</head>
+
+<body onmouseout="aparecerControle()">
+
+    <div class="container" onmouseover="desaparecerControle()">
+
+        <p>#TRAILER #FILME</p>
+        <hr>
+        <h1>Animais Fantásticos: Os Segredos de Dumbledore</h1>
+        <hr style="width: 80%;">
+
+        <video id="video1" class="video" src="./Animais Fantásticos_ Os Segredos de Dumbledore – Trailer Oficial 2.mp4" poster="./imgs/tumbfilme.png"></video>
+
+        <div id="controles" class="controle">
+            <button onclick="stop()" class="btn"><i class="fa-solid fa-stop"></i></button>
+            <button onclick="diminuir_vel()" class="btn"><i class="fa-solid fa-backward"></i></button>
+            <button onclick="play()" class="btn"><i class="fa-solid fa-play"></i></button>
+            <button onclick="pause()" class="btn"><i class="fa-solid fa-pause"></i></button>
+            <button onclick="aumentar_vel()" class="btn"><i class="fa-solid fa-forward"></i></button>
+            <button onclick="fullScren()" class="btn"><i class="fa-solid fa-expand"></i></button>
+        </div>
+
+    </div>
+
+    <script src="./script.js "></script>
+</body>
+
+</html>
